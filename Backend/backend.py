@@ -14,7 +14,7 @@ sio.connect('http://localhost:5000')
 
 cap = cv2.VideoCapture(0)
 
-while cap.is_isOpened():
+while cap.isOpened():
     ret, frame = cap.read()
     if not ret: break
 
